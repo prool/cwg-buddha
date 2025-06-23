@@ -1,0 +1,28 @@
+#12
+CircleMUD~
+God Simplex~
+1200 1299 10 0
+O 0 1209 1 1209 0 0 	(a squishy armchair)
+M 0 1207 1 1207 0 0 	(a cluster of rainbow-colored faeries)
+R 0 1208 1327 -1 0 0 	(a staff bulletin board)
+O 0 1327 99 1208 0 0 	(a staff bulletin board)
+R 0 1294 1328 -1 0 0 	(a advertising bulletin board)
+O 0 1328 99 1294 0 0 	(a advertising bulletin board)
+R 0 1293 1327 -1 0 0 	(a staff bulletin board)
+O 0 1327 99 1293 0 0 	(a staff bulletin board)
+R 0 1291 1326 -1 0 0 	(a builder's bulletin board)
+O 0 1326 99 1291 0 0 	(a builder's bulletin board)
+R 0 1202 3097 -1 0 0 	(a frozen bulletin board)
+O 0 3097 99 1202 0 0 	(a frozen bulletin board)
+R 0 1290 3096 -1 0 0 	(a social bulletin board)
+O 0 3096 99 1290 0 0 	(a social bulletin board)
+R 0 1204 3098 -1 0 0 	(a holy bulletin board)
+O 0 3098 99 1204 0 0 	(a holy bulletin board)
+M 0 1200 1 1201 0 0 	(the Immortal Innkeeper)
+M 0 1210 1 1210 0 0 	(a Large Dragon)
+O 1 1229 1 1210 0 0 	(Smaug's Couch)
+O 1 1297 1 1210 0 0 	(Large desk)
+M 0 1211 1 1270 0 0 	(Santa's mob)
+M 0 1201 1 1205 0 0 	(the Immortal Postmaster)
+S
+$
