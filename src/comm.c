@@ -566,7 +566,7 @@ void copyover_recover()
   boot_db();
 
 #if defined(CIRCLE_UNIX) || defined(CIRCLE_MACINTOSH)
-  log("Signal trapping.");
+  //log("Signal trapping.");
   signal_setup();
 #endif
 
@@ -818,7 +818,7 @@ void game_loop(socket_t mother_desc)
 
     /* Sleep if we don't have any connections */
     if (descriptor_list == NULL) {
-      log("No connections.  Going to sleep.");
+      //log("No connections.  Going to sleep.");
       FD_ZERO(&input_set);
       FD_SET(mother_desc, &input_set);
       if (select(mother_desc + 1, &input_set, (fd_set *) 0, (fd_set *) 0, NULL) < 0) {
@@ -826,8 +826,8 @@ void game_loop(socket_t mother_desc)
 	  log("Waking up to process signal.");
 	else
 	  perror("SYSERR: Select coma");
-      } else
-	log("New connection.  Waking up.");
+      } /* else
+	log("New connection.  Waking up."); */
       gettimeofday(&last_time, (struct timezone *) 0);
     }
     /* Set up the input, output, and exception sets for select(). */
@@ -2078,7 +2078,7 @@ ssize_t perform_socket_read(socket_t desc, char *read_point, size_t space_left)
 
   /* read() returned 0, meaning we got an EOF. */
   if (ret == 0) {
-    log("WARNING: EOF on socket read (connection broken by peer)");
+    //log("WARNING: EOF on socket read (connection broken by peer)");
     return (-1);
   }
 
@@ -2439,7 +2439,7 @@ void close_socket(struct descriptor_data *d)
       save_char(link_challenged);
       mudlog(NRM, MAX(LVL_IMMORT, GET_INVIS_LEV(link_challenged)), TRUE, "Closing link to: %s.", GET_NAME(link_challenged));
     } else {
-      mudlog(CMP, LVL_IMMORT, TRUE, "Losing player: %s.", GET_NAME(d->character) ? GET_NAME(d->character) : "<null>");
+      //mudlog(CMP, LVL_IMMORT, TRUE, "Losing player: %s.", GET_NAME(d->character) ? GET_NAME(d->character) : "<null>");
       free_char(d->character);
     }
   } else
